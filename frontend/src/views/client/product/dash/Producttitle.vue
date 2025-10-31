@@ -17,7 +17,7 @@ onMounted(() => {
   setTimeout(() => {
     isVisible.value = true;
   }, 500);
-  console.log("category", categories.value);
+
 });
 
 </script>
