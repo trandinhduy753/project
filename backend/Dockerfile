@@ -24,6 +24,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Sao chép mã nguồn
 COPY . .
 
+RUN mkdir -p database/factories
+
 # Cài đặt dependency Laravel
 RUN composer install --no-interaction --prefer-dist
 
